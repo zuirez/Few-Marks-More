@@ -1,0 +1,221 @@
+:root
+{
+    --background-color: #2e2e2e;
+    --primery-color: #ffffff;
+    --secondary-color: #c8c8c8;
+    --accent-color: #008cff;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.container
+{
+    margin: 20px;
+    width: 60%;
+    max-width: 500px;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: var(--primery-color);
+    flex-grow: 1;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    flex-grow: 1;
+}
+
+table, th, td
+{
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.input 
+{
+    width: 70%;
+    position: relative;
+}
+  
+.input input 
+{
+    font-size: 100%;
+    padding: 12px;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+}
+  
+.input label 
+{
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: #646464;
+    text-align: center;
+}
+  
+.input :is(input:focus, input:valid)~label 
+{
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: var(--primery-color);
+}
+  
+.input :is(input:focus, input:valid) 
+{
+    border-color: var(--accent-color);
+}
+
+#calculate
+{
+    width: 70%;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: -5px;
+    border: none;
+    background-color: var(--accent-color);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--primery-color);
+}
+
+.gradeDropDown
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 17px;
+}
+
+select 
+{
+    padding: 12px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+}
+
+#result
+{
+    width: 70%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#signature
+{
+    font-size: 16px;
+}
+
+#signature a
+{
+    font-weight: 600;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) 
+{
+    .container 
+    {
+        width: 90%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    table 
+    {
+        font-size: 14px;
+    }
+
+    .input input,
+    .gradeDropDown select,
+    #calculate 
+    {
+        width: 100%;
+    }
+
+    #calculate 
+    {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #result 
+    {
+        font-size: 16px;
+    }
+
+    #signature 
+    {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    .container 
+    {
+        width: 100%;
+        padding: 15px;
+    }
+
+    table 
+    {
+        font-size: 12px;
+    }
+
+    .input input,
+    .gradeDropDown select,
+    #calculate 
+    {
+        width: 100%;
+    }
+
+    #calculate 
+    {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    #result 
+    {
+        font-size: 14px;
+    }
+
+    #signature 
+    {
+        font-size: 12px;
+    }
+}

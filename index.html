@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FewMarksMore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="title">AIUB's Grading System</h1>
+
+        <div class="allGrades">
+            <table>
+                <tr>
+                    <th>Number</th>
+                    <th>Letter Grade</th>
+                    <th>Grade Point</th>
+                </tr>
+                
+                <tr>
+                    <td>90 - 100</td>
+                    <td>A+</td>
+                    <td>4.00</td>
+                </tr>
+
+                <tr>
+                    <td>85 - &lt; 90</td>
+                    <td>A</td>
+                    <td>3.75</td>
+                </tr>
+
+                <tr>
+                    <td>80 - &lt; 85</td>
+                    <td>B+</td>
+                    <td>3.50</td>
+                </tr>
+
+                <tr>
+                    <td>75 - &lt; 80</td>
+                    <td>B</td>
+                    <td>3.25</td>
+                </tr>
+
+                <tr>
+                    <td>70 - &lt; 75</td>
+                    <td>C+</td>
+                    <td>3.00</td>
+                </tr>
+
+                <tr>
+                    <td>65 - &lt; 70</td>
+                    <td>C</td>
+                    <td>2.75</td>
+                </tr>
+
+                <tr>
+                    <td>60 - &lt; 65</td>
+                    <td>D+</td>
+                    <td>2.50</td>
+                </tr>
+
+                <tr>
+                    <td>50 - &lt; 60</td>
+                    <td>D</td>
+                    <td>2.25</td>
+                </tr>
+
+                <tr>
+                    <td>&lt; 50</td>
+                    <td>F</td>
+                    <td>0.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="input">
+            <input type="text" required="" autocomplete="off" id="marks">
+            <label for="name">Enter your mid marks</label>
+        </div>
+
+        <div class="gradeDropDown">
+            <label for="grade-option">Which grade do you want to achieve?</label>
+            <select id="grade-option">
+                <option value="1">A+</option>
+                <option value="2">A</option>
+                <option value="3">B+</option>
+                <option value="4">B</option>
+                <option value="5">C+</option>
+                <option value="6">C</option>
+                <option value="7">D+</option>
+                <option value="8">D</option>
+                <option value="9">Pass</option>
+            </select>
+        </div>
+
+        <button id="calculate">Calculate</button>
+
+        <p id="result"></p>
+        
+        <p id="signature">Developed by <a href="https://github.com/zuirez">Rashed</a></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
