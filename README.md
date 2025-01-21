@@ -1,6 +1,6 @@
 # Few-Marks-More
 
--Calculate how much mark do you need in your final exam to get your desired score in a course. <br>
+- Calculate how much mark do you need in your final exam to get your desired score in a course. <br>
 
 > [!NOTE]  
 >The grading system is only specific to AIUB's grading system.
