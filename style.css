@@ -48,7 +48,7 @@ table
 table, th, td
 {
     border: 1px solid black;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-align: center;
 }
 
@@ -119,6 +119,15 @@ table, th, td
     font-size: 17px;
 }
 
+.gradeContributionDropDown
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 17px;
+}
+
 select 
 {
     padding: 12px;
@@ -161,6 +170,7 @@ select
 
     .input input,
     .gradeDropDown select,
+    .gradeContributionDropDown select,
     #calculate 
     {
         width: 100%;
@@ -198,6 +208,7 @@ select
 
     .input input,
     .gradeDropDown select,
+    .gradeContributionDropDown select,
     #calculate 
     {
         width: 100%;
