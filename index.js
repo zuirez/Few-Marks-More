@@ -40,10 +40,10 @@ function calculateGrade()
 
     switch (contributionOption) 
     {
-        case 1: contribution1 = 0.4;
-                contribution2 =0.6; break;
-        case 2: contribution1 = 0.5;
-                contribution2=0.5; break;
+        case 1: contribution1 = 0.5;
+                contribution2 =0.5; break;
+        case 2: contribution1 = 0.4;
+                contribution2=0.6; break;
 
         default:
             result.textContent = 'Please select a valid grade contribution.';
