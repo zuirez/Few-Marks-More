@@ -9,6 +9,7 @@ function calculateGrade()
 {
     const midMarks = parseFloat(document.getElementById('marks').value);
     const gradeOption = parseInt(document.getElementById('grade-option').value);
+    const contributionOption = parseInt(document.getElementById('contribution-option').value);
     const result = document.getElementById('result');
 
     if (isNaN(midMarks) || midMarks < 0 || midMarks > 100) 
@@ -18,6 +19,8 @@ function calculateGrade()
     }
 
     let desiredGrade;
+    let contribution1;
+    let contribution2;
 
     switch (gradeOption) 
     {
@@ -35,7 +38,19 @@ function calculateGrade()
         return;
     }
 
-    const requiredMarks = (desiredGrade - (midMarks * 0.4)) / 0.6;
+    switch (contributionOption) 
+    {
+        case 1: contribution1 = 0.4;
+                contribution2 =0.6; break;
+        case 2: contribution1 = 0.5;
+                contribution2=0.5; break;
+
+        default:
+            result.textContent = 'Please select a valid grade contribution.';
+        return;
+    }
+
+    const requiredMarks = (desiredGrade - (midMarks * contribution1)) / contribution2;
     const marksNeeded = Math.ceil(requiredMarks);
 
     if (marksNeeded <= 100) 
